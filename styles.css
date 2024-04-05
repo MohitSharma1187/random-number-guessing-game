@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #350363;
+    --background: white;
+}
+
+html {
+    width: 100%;
+    font-size: 62.5%;
+    /* Set base font size to 10px */
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #491579;
+}
+
+main {
+    width: 60rem;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 8rem 5rem;
+    color: #1f2933;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+    /* Adjusted font size */
+    margin: 2rem;
+}
+
+p {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.image {
+    width: 40%;
+    max-height: 220px;
+    height: auto;
+    margin: 1rem 0 4rem 0;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+button {
+    min-width: 28rem;
+    background-image: linear-gradient(92.88deg, #455eb5 9.16%, #5643cc 43.89%, #673fd7 64.72%);
+    border-radius: 0.8rem;
+    border-style: none;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    text-transform: capitalize;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+button:last-child {
+    background: var(--dark);
+    margin-bottom: 0;
+}
+
+button:hover {
+    box-shadow: rgba(54, 146, 31, 0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+
+#gamearea {
+    display: none;
+}
+
+#newGameButton {
+    margin: 2rem 0;
+    /* Added margin */
+}
+
+input {
+    border: 0.1rem solid lightgray;
+    background: transparent;
+    margin: 2rem;
+    padding: 2rem 0;
+    width: 90%;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+}
+
+.stats {
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.info span {
+    font-size: 4rem;
+    /* Adjusted font size */
+    color: red;
+}
